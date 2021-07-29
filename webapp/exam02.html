@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1>자바스크립트</h1>
+	<h2>변수형</h2>
+	
+	<p>개발자 모드 console에서 확인</p>
+
+</body>
+
+<script type="text/javascript">
+
+/* 변수 선언법 */
+/* 자료형을 쓰지 않는다 */
+console.log("변수 선언===================")
+var no = 3;              // number no;
+var str = "안녕하세요";     // string str;
+var boo = true;          // boolean boo;
+
+</script>
+
+<script type="text/javascript">
+//같은 이름의 변수 선언 된다.
+var name = "겅우성";
+var name = "유재석";
+var name = "이효리";
+
+console.log(name);
+
+var person = "정우성";
+person = "유재석"
+
+console.log(person);
+
+</script>
+
+<script type="text/javascript">
+var data;
+console.log(typeof data); //undefined
+
+data = 15;
+console.log(typeof data); //number
+
+data = "안녕"
+console.log(typeof data); //String
+
+data = 3<5
+console.log(typeof data); //boolean
+</script>
+
+<script type="text/javascript">
+//undefined, null비교
+var myVar01;
+var myVar02 = null;
+
+console.log(myVar01); //undefined
+console.log(myVar02); //null
+
+</script>
+
+<script type="text/javascript">
+/* 동등(==), 일치(===) 연산자 비교*/
+console.log( 123 == 123); 
+console.log( "123" == 123); //true 느슨하게 비교
+console.log( "123" === 123); //
+
+</script>
+
+
+</html>
