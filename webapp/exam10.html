@@ -2,20 +2,29 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
 
 <title>Insert title here</title>
 </head>
 
 <body>
 
-	<ul>
-		<li class="del">첫번째 아이템입니다.</li>
-		<li class="del"><strong>두번째 아이템입니다.</strong></li>
-		<li class="del">세번째<br> 아이템입니다.</li>
-		<li><strong>네번째 아이템입니다.</strong></li>
-		<li>다섯번째 아이템입니다.</li>
-	</ul>
+	<script type="text/javascript">
+	
+		//(2) 변수에 익명함수를 대입 한다.
+		var test = function(){
+			console.log("test 함수(익명) 입니다.")
+		}
+		
+		//(1) 기명함수 먼저 정리
+		function test(){
+			console.log("test 함수(기명) 입니다.")
+		}
+		
+		//실행(실행)
+		test();
+	
+	
+	</script>
 
 </body>
 	

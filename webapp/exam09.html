@@ -2,21 +2,49 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
 
 <title>Insert title here</title>
 </head>
 
 <body>
 
-	<ul>
-		<li>첫번째 아이템입니다.</li>
-		<li>두번째 아이템입니다.</li>
-		<li class="del">삭제할  아이템입니다.</li>
-		<li>네번째 아이템입니다.</li>
-		<li class="del">삭제할  아이템입니다.</li>
-		<li>다섯 번째 아이템입니다.</li>
-	</ul>
+	<script type="text/javascript">
+		// 이름이 있는 함수 (기명함수, 선언적함수)
+		
+		var plusSum = plus(1, 2)
+		console.log(plusSum)
+		document.write (plusSum);
+		
+		var result01 = plus(2.7, 5.8);
+		console.log(result01);
+		
+		var result02 = plus("안녕", "하세요");
+		console.log(result02)
+		
+		//함수 정의 --> 정의부터 해석된다
+		function plus(a, b){
+			var sum = a + b;
+			return sum
+		}
+		
+		// 이름이 없는 함수 (익명함수, 선언적함수) --> 이름이 없어서 바로 사용해야함 -->재사용을 위해서 변수에 할당해서 사용
+		//															--> 변수는 위에서 실행 --> 함수가 변수에 할당 된후 사용가능
+		var minus = function (a,b){
+			var sum = a - b;
+			return sum; 
+		}
+		
+		var result03 = minus(5,4)
+		console.log(result03);
+		
+		var result04 = minus(5,2.4)
+		console.log(result04);
+		
+		var result05 = minus("안녕","하세요");
+		console.log(result05);
+		
+		
+	</script>
 
 </body>
 	
