@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/js/assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<input id="btn" type="button" VALUE="js테스트버튼" />
+		<h1 id="display">이름출력영역</h1>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+
+	//btn 클릭했을때 --> 이벤트
+	$("#btn").on("mouseenter", function(){
+		console.log("버튼클릭")
+		$("#display").html("홍길동");
+		$("#display").css("color", "red");
+		$("#display").prepend("의적 ");
+		$("#display").append("이다");
+	});
+	
+	$("#btn").on("mouseout", function(){
+		console.log("버튼클릭")
+		$("#display").html("이름출력영역");
+	});
+
+</script>
+
+</html>

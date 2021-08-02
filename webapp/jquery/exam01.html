@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head profile="http://www.w3.org/2005/10/profile">
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="http://example.com/myicon.png">
+<script type="text/javascript" src="/js/assets/js/jquery/jquery-1.12.4.js"></script>
 <title>Insert title here</title>
+
 </head>
 <body>
-	
+
 	<div>
 		<button id="btn">자바스크립트 테스트 버튼</button>
 		<p id="display">이름출력영역</p>
 	</div>
-	 
+
+
 </body>
+
+<script type="text/javascript">
+	$("#btn").on("click", function() {
+		console.log("jquery 버튼 클릭")
+		$("#display").html("홍길동");
+	});
+</script>
+
 
 
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/js/assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="del">세번째아이템입니다.</li>
+		<li><strong>네번째 아이템입니다.</strong></li>
+		
+	</ul>
+	<input id="btn" type="button" VALUE="li요소추가" />
+</body>
+
+<script type="text/javascript">
+
+ 	$("#btn").on("click", function(){
+		console.log("btn click") 		
+ 		$("ul").append("<li id='five'>다섯번째 아이템입니다.</li><li id='six'>여섯번째 아이템입니다.</li><li id='seven'>일곱번째 아이템입니다.</li></ul>")
+ 		
+		$("#btn").remove();
+ 	});
+ 	
+	$("ul").on("click", "li", function(){
+		console.log("li태그 클릭");
+		var $this = $(this);
+		console.log($this)
+		$this.text("김영기")
+	});
+	
+	
+ 	
+ 	
+ 	
+</script>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/js/assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="del">세번째아이템입니다.</li>
+		<li><strong>네번째 아이템입니다.</strong></li>
+		
+	</ul>
+	
+</body>
+
+<script type="text/javascript">
+
+	/* $("#first").on("click", function(){
+		console.log("id = first 클릭");
+	});
+
+	$("#second").on("click", function(){
+		console.log("id = second 클릭");
+	}); */		
+	
+	//SINGLE CLICK
+	$("li").on("click", function(){
+		/* console.log("li클릭");
+		console.log($(this)); */
+		
+		$(this).text("홍길동")
+	});
+	
+	//DOUBLE CLICK
+	$("li").on("dblclick", function(){
+		var str = $(this).attr("id");
+		console.log(str)
+		
+	});
+	
+</script>
+
+
+</html>
